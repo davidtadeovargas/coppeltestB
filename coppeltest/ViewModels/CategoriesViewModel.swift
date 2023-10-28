@@ -15,6 +15,8 @@ class CategoriesViewModel: ObservableObject {
     @Published var categories: [CategoryModel] = []
     @Published var isBannerVisible = true
     
+    private let categoriesService = CategoriesService()
+    
     /**
      Inicializa un nuevo ViewModel de categorías y carga categorías manualmente.
 
@@ -33,11 +35,10 @@ class CategoriesViewModel: ObservableObject {
      - SeeAlso: `CategoryModel` para ver el modelo de datos de categoría asociado.
      */
     func loadCategories() {
-        categories = [
-            CategoryModel(category: .electronics),
-            CategoryModel(category: .jewelry),
-            CategoryModel(category: .mensClothing),
-            CategoryModel(category: .womensClothing)
-        ]
+        categoriesService.fetchCategories { [weak self] categories in
+            DispatchQueue.main.async {
+                self?.categories = categories
+            }
+        }
     }
 }

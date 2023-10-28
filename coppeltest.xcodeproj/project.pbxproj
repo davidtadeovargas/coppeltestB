@@ -15,6 +15,9 @@
 		818987E22AECC63D0089A548 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 818987E12AECC63D0089A548 /* README.md */; };
 		818987E52AECF2220089A548 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987E42AECF2220089A548 /* ProductService.swift */; };
 		818987E72AECF3470089A548 /* ProductsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987E62AECF3470089A548 /* ProductsServiceTests.swift */; };
+		818987E92AECF5D30089A548 /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987E82AECF5D30089A548 /* CategoriesService.swift */; };
+		818987EB2AECF5DC0089A548 /* BrandsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987EA2AECF5DC0089A548 /* BrandsService.swift */; };
+		818987ED2AECF69F0089A548 /* CategoriesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987EC2AECF69F0089A548 /* CategoriesServiceTests.swift */; };
 		81D999C62AEAD4A60071A96D /* coppeltestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C52AEAD4A60071A96D /* coppeltestApp.swift */; };
 		81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C72AEAD4A60071A96D /* LoginView.swift */; };
 		81D999CA2AEAD4A80071A96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D999C92AEAD4A80071A96D /* Assets.xcassets */; };
@@ -72,6 +75,9 @@
 		818987E12AECC63D0089A548 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		818987E42AECF2220089A548 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		818987E62AECF3470089A548 /* ProductsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsServiceTests.swift; sourceTree = "<group>"; };
+		818987E82AECF5D30089A548 /* CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesService.swift; sourceTree = "<group>"; };
+		818987EA2AECF5DC0089A548 /* BrandsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsService.swift; sourceTree = "<group>"; };
+		818987EC2AECF69F0089A548 /* CategoriesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesServiceTests.swift; sourceTree = "<group>"; };
 		81D999C22AEAD4A60071A96D /* coppeltest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coppeltest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D999C52AEAD4A60071A96D /* coppeltestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coppeltestApp.swift; sourceTree = "<group>"; };
 		81D999C72AEAD4A60071A96D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				818987E42AECF2220089A548 /* ProductService.swift */,
+				818987E82AECF5D30089A548 /* CategoriesService.swift */,
+				818987EA2AECF5DC0089A548 /* BrandsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 				8113C9BC2AEBDC19009F99CC /* CategoriesViewModelTests.swift */,
 				8113C9BE2AEBDC24009F99CC /* BrandsViewModelTests.swift */,
 				818987E62AECF3470089A548 /* ProductsServiceTests.swift */,
+				818987EC2AECF69F0089A548 /* CategoriesServiceTests.swift */,
 			);
 			path = coppeltestTests;
 			sourceTree = "<group>";
@@ -402,6 +411,7 @@
 				81D99A172AEBA6B30071A96D /* BrandsView.swift in Sources */,
 				81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */,
 				81D999F92AEB5B600071A96D /* SplashView.swift in Sources */,
+				818987EB2AECF5DC0089A548 /* BrandsService.swift in Sources */,
 				81D99A092AEB79870071A96D /* CategoryModel.swift in Sources */,
 				81D999C62AEAD4A60071A96D /* coppeltestApp.swift in Sources */,
 				81D99A112AEB90CE0071A96D /* CategoriesViewModel.swift in Sources */,
@@ -410,6 +420,7 @@
 				81D99A072AEB788C0071A96D /* ProductModel.swift in Sources */,
 				81D999F72AEB364F0071A96D /* LoginViewModel.swift in Sources */,
 				81D99A192AEBA6E90071A96D /* BrandsViewModel.swift in Sources */,
+				818987E92AECF5D30089A548 /* CategoriesService.swift in Sources */,
 				8113C9B72AEBC2CD009F99CC /* PromotionalBannerView.swift in Sources */,
 				81D99A042AEB76F50071A96D /* HomeView.swift in Sources */,
 				818987E52AECF2220089A548 /* ProductService.swift in Sources */,
@@ -429,6 +440,7 @@
 				8113C9BD2AEBDC19009F99CC /* CategoriesViewModelTests.swift in Sources */,
 				8113C9BB2AEBDC0B009F99CC /* ProductsViewModelTest.swift in Sources */,
 				8113C9BF2AEBDC24009F99CC /* BrandsViewModelTests.swift in Sources */,
+				818987ED2AECF69F0089A548 /* CategoriesServiceTests.swift in Sources */,
 				81D999D72AEAD4A80071A96D /* LoginViewModelTests.swift in Sources */,
 				818987E72AECF3470089A548 /* ProductsServiceTests.swift in Sources */,
 			);
