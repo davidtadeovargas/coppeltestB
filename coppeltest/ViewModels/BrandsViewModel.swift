@@ -13,7 +13,7 @@ import Combine
 class BrandsViewModel: ObservableObject {
     
     @Published var brands: [BrandModel] = []
-
+    private let brandsService = BrandsService()
     /**
      Inicializa un nuevo ViewModel de marcas.
      
@@ -33,11 +33,10 @@ class BrandsViewModel: ObservableObject {
      */
     func loadBrands() {
         
-        brands = [
-            BrandModel(brand: .apple),
-            BrandModel(brand: .motorola),
-            BrandModel(brand: .samsung),
-            BrandModel(brand: .sony)
-        ]
+        brandsService.fetchBrands { [weak self] fetchedBrands in
+            DispatchQueue.main.async {
+                self?.brands = fetchedBrands
+            }
+        }
     }
 }
