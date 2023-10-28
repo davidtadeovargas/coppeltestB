@@ -143,6 +143,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		814EDDB32AED733B0085672E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8113C9BC2AEBDC19009F99CC /* CategoriesViewModelTests.swift */,
+				8113C9BE2AEBDC24009F99CC /* BrandsViewModelTests.swift */,
+				8113C9BA2AEBDC0B009F99CC /* ProductsViewModelTest.swift */,
+				81D999D62AEAD4A80071A96D /* LoginViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		814EDDB42AED73410085672E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				818987E62AECF3470089A548 /* ProductsServiceTests.swift */,
+				818987EC2AECF69F0089A548 /* CategoriesServiceTests.swift */,
+				818987EE2AECF7D00089A548 /* BrandsServiceTests.swift */,
+				81A79A312AED0DD50014014D /* LoginServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		818987E32AECF2150089A548 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,14 +224,8 @@
 		81D999D52AEAD4A80071A96D /* coppeltestTests */ = {
 			isa = PBXGroup;
 			children = (
-				81D999D62AEAD4A80071A96D /* LoginViewModelTests.swift */,
-				8113C9BA2AEBDC0B009F99CC /* ProductsViewModelTest.swift */,
-				8113C9BC2AEBDC19009F99CC /* CategoriesViewModelTests.swift */,
-				8113C9BE2AEBDC24009F99CC /* BrandsViewModelTests.swift */,
-				818987E62AECF3470089A548 /* ProductsServiceTests.swift */,
-				818987EC2AECF69F0089A548 /* CategoriesServiceTests.swift */,
-				818987EE2AECF7D00089A548 /* BrandsServiceTests.swift */,
-				81A79A312AED0DD50014014D /* LoginServiceTests.swift */,
+				814EDDB42AED73410085672E /* Services */,
+				814EDDB32AED733B0085672E /* ViewModels */,
 			);
 			path = coppeltestTests;
 			sourceTree = "<group>";
