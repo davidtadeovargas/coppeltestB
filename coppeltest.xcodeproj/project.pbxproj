@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8113C9B72AEBC2CD009F99CC /* PromotionalBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113C9B62AEBC2CD009F99CC /* PromotionalBannerView.swift */; };
+		8113C9B92AEBC7A7009F99CC /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113C9B82AEBC7A7009F99CC /* SplashViewModel.swift */; };
+		8113C9BB2AEBDC0B009F99CC /* ProductsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113C9BA2AEBDC0B009F99CC /* ProductsViewModelTest.swift */; };
+		8113C9BD2AEBDC19009F99CC /* CategoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113C9BC2AEBDC19009F99CC /* CategoriesViewModelTests.swift */; };
+		8113C9BF2AEBDC24009F99CC /* BrandsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113C9BE2AEBDC24009F99CC /* BrandsViewModelTests.swift */; };
+		818987E22AECC63D0089A548 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 818987E12AECC63D0089A548 /* README.md */; };
+		81D999C62AEAD4A60071A96D /* coppeltestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C52AEAD4A60071A96D /* coppeltestApp.swift */; };
+		81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C72AEAD4A60071A96D /* LoginView.swift */; };
+		81D999CA2AEAD4A80071A96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D999C92AEAD4A80071A96D /* Assets.xcassets */; };
+		81D999CD2AEAD4A80071A96D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D999CC2AEAD4A80071A96D /* Preview Assets.xcassets */; };
+		81D999D72AEAD4A80071A96D /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999D62AEAD4A80071A96D /* LoginViewModelTests.swift */; };
+		81D999E12AEAD4A80071A96D /* coppeltestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999E02AEAD4A80071A96D /* coppeltestUITests.swift */; };
+		81D999E32AEAD4A80071A96D /* coppeltestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999E22AEAD4A80071A96D /* coppeltestUITestsLaunchTests.swift */; };
+		81D999F02AEAEBA60071A96D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81D999EF2AEAEBA60071A96D /* GoogleService-Info.plist */; };
+		81D999F32AEAEC460071A96D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 81D999F22AEAEC460071A96D /* FirebaseAuth */; };
+		81D999F72AEB364F0071A96D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999F62AEB364F0071A96D /* LoginViewModel.swift */; };
+		81D999F92AEB5B600071A96D /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999F82AEB5B600071A96D /* SplashView.swift */; };
+		81D999FB2AEB640A0071A96D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81D999FA2AEB640A0071A96D /* Localizable.strings */; };
+		81D999FE2AEB75FD0071A96D /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999FD2AEB75FD0071A96D /* CategoryView.swift */; };
+		81D99A002AEB763B0071A96D /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999FF2AEB763B0071A96D /* ProductView.swift */; };
+		81D99A022AEB767D0071A96D /* BrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A012AEB767D0071A96D /* BrandView.swift */; };
+		81D99A042AEB76F50071A96D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A032AEB76F50071A96D /* HomeView.swift */; };
+		81D99A072AEB788C0071A96D /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A062AEB788C0071A96D /* ProductModel.swift */; };
+		81D99A092AEB79870071A96D /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A082AEB79870071A96D /* CategoryModel.swift */; };
+		81D99A0B2AEB7A210071A96D /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A0A2AEB7A210071A96D /* BrandModel.swift */; };
+		81D99A0D2AEB8BBE0071A96D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A0C2AEB8BBE0071A96D /* Category.swift */; };
+		81D99A0F2AEB8FFE0071A96D /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A0E2AEB8FFE0071A96D /* CategoriesView.swift */; };
+		81D99A112AEB90CE0071A96D /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A102AEB90CE0071A96D /* CategoriesViewModel.swift */; };
+		81D99A132AEB97590071A96D /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A122AEB97590071A96D /* ProductsView.swift */; };
+		81D99A152AEB98070071A96D /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A142AEB98070071A96D /* ProductsViewModel.swift */; };
+		81D99A172AEBA6B30071A96D /* BrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A162AEBA6B30071A96D /* BrandsView.swift */; };
+		81D99A192AEBA6E90071A96D /* BrandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A182AEBA6E90071A96D /* BrandsViewModel.swift */; };
+		81D99A1B2AEBA7720071A96D /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A1A2AEBA7720071A96D /* Brand.swift */; };
+		81D99A1D2AEBBF070071A96D /* MaintenanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A1C2AEBBF070071A96D /* MaintenanceView.swift */; };
+		81D99A1F2AEBBF960071A96D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A1E2AEBBF960071A96D /* HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81D999D32AEAD4A80071A96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81D999BA2AEAD4A60071A96D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D999C12AEAD4A60071A96D;
+			remoteInfo = coppeltest;
+		};
+		81D999DD2AEAD4A80071A96D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81D999BA2AEAD4A60071A96D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D999C12AEAD4A60071A96D;
+			remoteInfo = coppeltest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8113C9B62AEBC2CD009F99CC /* PromotionalBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionalBannerView.swift; sourceTree = "<group>"; };
+		8113C9B82AEBC7A7009F99CC /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		8113C9BA2AEBDC0B009F99CC /* ProductsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModelTest.swift; sourceTree = "<group>"; };
+		8113C9BC2AEBDC19009F99CC /* CategoriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModelTests.swift; sourceTree = "<group>"; };
+		8113C9BE2AEBDC24009F99CC /* BrandsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsViewModelTests.swift; sourceTree = "<group>"; };
+		818987E12AECC63D0089A548 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		81D999C22AEAD4A60071A96D /* coppeltest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coppeltest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D999C52AEAD4A60071A96D /* coppeltestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coppeltestApp.swift; sourceTree = "<group>"; };
+		81D999C72AEAD4A60071A96D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		81D999C92AEAD4A80071A96D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D999CC2AEAD4A80071A96D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81D999D22AEAD4A80071A96D /* coppeltestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coppeltestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D999D62AEAD4A80071A96D /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		81D999DC2AEAD4A80071A96D /* coppeltestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coppeltestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D999E02AEAD4A80071A96D /* coppeltestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coppeltestUITests.swift; sourceTree = "<group>"; };
+		81D999E22AEAD4A80071A96D /* coppeltestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coppeltestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		81D999EF2AEAEBA60071A96D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81D999F62AEB364F0071A96D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		81D999F82AEB5B600071A96D /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		81D999FA2AEB640A0071A96D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = coppeltest/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		81D999FD2AEB75FD0071A96D /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		81D999FF2AEB763B0071A96D /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		81D99A012AEB767D0071A96D /* BrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandView.swift; sourceTree = "<group>"; };
+		81D99A032AEB76F50071A96D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		81D99A062AEB788C0071A96D /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		81D99A082AEB79870071A96D /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		81D99A0A2AEB7A210071A96D /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
+		81D99A0C2AEB8BBE0071A96D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		81D99A0E2AEB8FFE0071A96D /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		81D99A102AEB90CE0071A96D /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		81D99A122AEB97590071A96D /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		81D99A142AEB98070071A96D /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		81D99A162AEBA6B30071A96D /* BrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsView.swift; sourceTree = "<group>"; };
+		81D99A182AEBA6E90071A96D /* BrandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsViewModel.swift; sourceTree = "<group>"; };
+		81D99A1A2AEBA7720071A96D /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		81D99A1C2AEBBF070071A96D /* MaintenanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceView.swift; sourceTree = "<group>"; };
+		81D99A1E2AEBBF960071A96D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81D999BF2AEAD4A60071A96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D999F32AEAEC460071A96D /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D999CF2AEAD4A80071A96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D999D92AEAD4A80071A96D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81D999B92AEAD4A60071A96D = {
+			isa = PBXGroup;
+			children = (
+				818987E12AECC63D0089A548 /* README.md */,
+				81D999C42AEAD4A60071A96D /* coppeltest */,
+				81D999D52AEAD4A80071A96D /* coppeltestTests */,
+				81D999DF2AEAD4A80071A96D /* coppeltestUITests */,
+				81D999C32AEAD4A60071A96D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81D999C32AEAD4A60071A96D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81D999C22AEAD4A60071A96D /* coppeltest.app */,
+				81D999D22AEAD4A80071A96D /* coppeltestTests.xctest */,
+				81D999DC2AEAD4A80071A96D /* coppeltestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81D999C42AEAD4A60071A96D /* coppeltest */ = {
+			isa = PBXGroup;
+			children = (
+				81D99A052AEB78820071A96D /* Models */,
+				81D999F52AEB361C0071A96D /* ViewModels */,
+				81D999F42AEB360C0071A96D /* Views */,
+				81D999EF2AEAEBA60071A96D /* GoogleService-Info.plist */,
+				81D999C52AEAD4A60071A96D /* coppeltestApp.swift */,
+				81D999C92AEAD4A80071A96D /* Assets.xcassets */,
+				81D999FA2AEB640A0071A96D /* Localizable.strings */,
+				81D999CB2AEAD4A80071A96D /* Preview Content */,
+			);
+			path = coppeltest;
+			sourceTree = "<group>";
+		};
+		81D999CB2AEAD4A80071A96D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				81D999CC2AEAD4A80071A96D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81D999D52AEAD4A80071A96D /* coppeltestTests */ = {
+			isa = PBXGroup;
+			children = (
+				81D999D62AEAD4A80071A96D /* LoginViewModelTests.swift */,
+				8113C9BA2AEBDC0B009F99CC /* ProductsViewModelTest.swift */,
+				8113C9BC2AEBDC19009F99CC /* CategoriesViewModelTests.swift */,
+				8113C9BE2AEBDC24009F99CC /* BrandsViewModelTests.swift */,
+			);
+			path = coppeltestTests;
+			sourceTree = "<group>";
+		};
+		81D999DF2AEAD4A80071A96D /* coppeltestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				81D999E02AEAD4A80071A96D /* coppeltestUITests.swift */,
+				81D999E22AEAD4A80071A96D /* coppeltestUITestsLaunchTests.swift */,
+			);
+			path = coppeltestUITests;
+			sourceTree = "<group>";
+		};
+		81D999F42AEB360C0071A96D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81D999FC2AEB75E20071A96D /* Articles */,
+				81D99A032AEB76F50071A96D /* HomeView.swift */,
+				81D999C72AEAD4A60071A96D /* LoginView.swift */,
+				81D999F82AEB5B600071A96D /* SplashView.swift */,
+				81D99A1C2AEBBF070071A96D /* MaintenanceView.swift */,
+				8113C9B62AEBC2CD009F99CC /* PromotionalBannerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81D999F52AEB361C0071A96D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				81D999F62AEB364F0071A96D /* LoginViewModel.swift */,
+				81D99A102AEB90CE0071A96D /* CategoriesViewModel.swift */,
+				81D99A142AEB98070071A96D /* ProductsViewModel.swift */,
+				81D99A182AEBA6E90071A96D /* BrandsViewModel.swift */,
+				81D99A1E2AEBBF960071A96D /* HomeViewModel.swift */,
+				8113C9B82AEBC7A7009F99CC /* SplashViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		81D999FC2AEB75E20071A96D /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				81D999FD2AEB75FD0071A96D /* CategoryView.swift */,
+				81D999FF2AEB763B0071A96D /* ProductView.swift */,
+				81D99A012AEB767D0071A96D /* BrandView.swift */,
+				81D99A0E2AEB8FFE0071A96D /* CategoriesView.swift */,
+				81D99A122AEB97590071A96D /* ProductsView.swift */,
+				81D99A162AEBA6B30071A96D /* BrandsView.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		81D99A052AEB78820071A96D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81D99A062AEB788C0071A96D /* ProductModel.swift */,
+				81D99A082AEB79870071A96D /* CategoryModel.swift */,
+				81D99A0A2AEB7A210071A96D /* BrandModel.swift */,
+				81D99A0C2AEB8BBE0071A96D /* Category.swift */,
+				81D99A1A2AEBA7720071A96D /* Brand.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81D999C12AEAD4A60071A96D /* coppeltest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D999E62AEAD4A80071A96D /* Build configuration list for PBXNativeTarget "coppeltest" */;
+			buildPhases = (
+				81D999BE2AEAD4A60071A96D /* Sources */,
+				81D999BF2AEAD4A60071A96D /* Frameworks */,
+				81D999C02AEAD4A60071A96D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coppeltest;
+			packageProductDependencies = (
+				81D999F22AEAEC460071A96D /* FirebaseAuth */,
+			);
+			productName = coppeltest;
+			productReference = 81D999C22AEAD4A60071A96D /* coppeltest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81D999D12AEAD4A80071A96D /* coppeltestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D999E92AEAD4A80071A96D /* Build configuration list for PBXNativeTarget "coppeltestTests" */;
+			buildPhases = (
+				81D999CE2AEAD4A80071A96D /* Sources */,
+				81D999CF2AEAD4A80071A96D /* Frameworks */,
+				81D999D02AEAD4A80071A96D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D999D42AEAD4A80071A96D /* PBXTargetDependency */,
+			);
+			name = coppeltestTests;
+			productName = coppeltestTests;
+			productReference = 81D999D22AEAD4A80071A96D /* coppeltestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		81D999DB2AEAD4A80071A96D /* coppeltestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D999EC2AEAD4A80071A96D /* Build configuration list for PBXNativeTarget "coppeltestUITests" */;
+			buildPhases = (
+				81D999D82AEAD4A80071A96D /* Sources */,
+				81D999D92AEAD4A80071A96D /* Frameworks */,
+				81D999DA2AEAD4A80071A96D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D999DE2AEAD4A80071A96D /* PBXTargetDependency */,
+			);
+			name = coppeltestUITests;
+			productName = coppeltestUITests;
+			productReference = 81D999DC2AEAD4A80071A96D /* coppeltestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81D999BA2AEAD4A60071A96D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					81D999C12AEAD4A60071A96D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					81D999D12AEAD4A80071A96D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 81D999C12AEAD4A60071A96D;
+					};
+					81D999DB2AEAD4A80071A96D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 81D999C12AEAD4A60071A96D;
+					};
+				};
+			};
+			buildConfigurationList = 81D999BD2AEAD4A60071A96D /* Build configuration list for PBXProject "coppeltest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81D999B92AEAD4A60071A96D;
+			packageReferences = (
+				81D999F12AEAEC460071A96D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 81D999C32AEAD4A60071A96D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81D999C12AEAD4A60071A96D /* coppeltest */,
+				81D999D12AEAD4A80071A96D /* coppeltestTests */,
+				81D999DB2AEAD4A80071A96D /* coppeltestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81D999C02AEAD4A60071A96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D999CD2AEAD4A80071A96D /* Preview Assets.xcassets in Resources */,
+				81D999FB2AEB640A0071A96D /* Localizable.strings in Resources */,
+				81D999CA2AEAD4A80071A96D /* Assets.xcassets in Resources */,
+				81D999F02AEAEBA60071A96D /* GoogleService-Info.plist in Resources */,
+				818987E22AECC63D0089A548 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D999D02AEAD4A80071A96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D999DA2AEAD4A80071A96D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81D999BE2AEAD4A60071A96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D99A022AEB767D0071A96D /* BrandView.swift in Sources */,
+				81D99A0B2AEB7A210071A96D /* BrandModel.swift in Sources */,
+				81D99A1D2AEBBF070071A96D /* MaintenanceView.swift in Sources */,
+				81D99A152AEB98070071A96D /* ProductsViewModel.swift in Sources */,
+				81D99A172AEBA6B30071A96D /* BrandsView.swift in Sources */,
+				81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */,
+				81D999F92AEB5B600071A96D /* SplashView.swift in Sources */,
+				81D99A092AEB79870071A96D /* CategoryModel.swift in Sources */,
+				81D999C62AEAD4A60071A96D /* coppeltestApp.swift in Sources */,
+				81D99A112AEB90CE0071A96D /* CategoriesViewModel.swift in Sources */,
+				81D99A0F2AEB8FFE0071A96D /* CategoriesView.swift in Sources */,
+				81D99A1B2AEBA7720071A96D /* Brand.swift in Sources */,
+				81D99A072AEB788C0071A96D /* ProductModel.swift in Sources */,
+				81D999F72AEB364F0071A96D /* LoginViewModel.swift in Sources */,
+				81D99A192AEBA6E90071A96D /* BrandsViewModel.swift in Sources */,
+				8113C9B72AEBC2CD009F99CC /* PromotionalBannerView.swift in Sources */,
+				81D99A042AEB76F50071A96D /* HomeView.swift in Sources */,
+				81D99A1F2AEBBF960071A96D /* HomeViewModel.swift in Sources */,
+				81D99A002AEB763B0071A96D /* ProductView.swift in Sources */,
+				81D999FE2AEB75FD0071A96D /* CategoryView.swift in Sources */,
+				81D99A0D2AEB8BBE0071A96D /* Category.swift in Sources */,
+				8113C9B92AEBC7A7009F99CC /* SplashViewModel.swift in Sources */,
+				81D99A132AEB97590071A96D /* ProductsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D999CE2AEAD4A80071A96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8113C9BD2AEBDC19009F99CC /* CategoriesViewModelTests.swift in Sources */,
+				8113C9BB2AEBDC0B009F99CC /* ProductsViewModelTest.swift in Sources */,
+				8113C9BF2AEBDC24009F99CC /* BrandsViewModelTests.swift in Sources */,
+				81D999D72AEAD4A80071A96D /* LoginViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D999D82AEAD4A80071A96D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D999E12AEAD4A80071A96D /* coppeltestUITests.swift in Sources */,
+				81D999E32AEAD4A80071A96D /* coppeltestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81D999D42AEAD4A80071A96D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D999C12AEAD4A60071A96D /* coppeltest */;
+			targetProxy = 81D999D32AEAD4A80071A96D /* PBXContainerItemProxy */;
+		};
+		81D999DE2AEAD4A80071A96D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D999C12AEAD4A60071A96D /* coppeltest */;
+			targetProxy = 81D999DD2AEAD4A80071A96D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		81D999E42AEAD4A80071A96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81D999E52AEAD4A80071A96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81D999E72AEAD4A80071A96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"coppeltest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Coppel;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coppeltest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81D999E82AEAD4A80071A96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"coppeltest/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Coppel;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coppeltest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81D999EA2AEAD4A80071A96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coppeltestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coppeltest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/coppeltest";
+			};
+			name = Debug;
+		};
+		81D999EB2AEAD4A80071A96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coppeltestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coppeltest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/coppeltest";
+			};
+			name = Release;
+		};
+		81D999ED2AEAD4A80071A96D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coppeltestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = coppeltest;
+			};
+			name = Debug;
+		};
+		81D999EE2AEAD4A80071A96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coppeltestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = coppeltest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81D999BD2AEAD4A60071A96D /* Build configuration list for PBXProject "coppeltest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D999E42AEAD4A80071A96D /* Debug */,
+				81D999E52AEAD4A80071A96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D999E62AEAD4A80071A96D /* Build configuration list for PBXNativeTarget "coppeltest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D999E72AEAD4A80071A96D /* Debug */,
+				81D999E82AEAD4A80071A96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D999E92AEAD4A80071A96D /* Build configuration list for PBXNativeTarget "coppeltestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D999EA2AEAD4A80071A96D /* Debug */,
+				81D999EB2AEAD4A80071A96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D999EC2AEAD4A80071A96D /* Build configuration list for PBXNativeTarget "coppeltestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D999ED2AEAD4A80071A96D /* Debug */,
+				81D999EE2AEAD4A80071A96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81D999F12AEAEC460071A96D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81D999F22AEAEC460071A96D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81D999F12AEAEC460071A96D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 81D999BA2AEAD4A60071A96D /* Project object */;
+}

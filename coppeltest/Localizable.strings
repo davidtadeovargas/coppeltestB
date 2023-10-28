@@ -1,0 +1,21 @@
+"Hello" = "¡Hola!";
+"Sign In" = "Iniciar sesión";
+"Forgot Password" = "Olvidé mi contraseña";
+"Create an Account" = "Crear una cuenta";
+"InvalidUserPassword" = "Usuario/Contraseña inválidos";
+"DoNotHaveAccount" = "¿No tienes cuenta?";
+"PasswordPlaceholder" = "Contraseña*";
+"EmailPlaceholder" = "Correo electrónico*";
+"SignInWithEmail" = "Iniciar sesión con tu correo electrónico";
+"loadingMessage" = "Cargando...";
+"failedToLoadImageMessage" = "Fallo al cargar la imagen";
+"unknownStateMessage" = "Estado desconocido";
+"categoriesTitle" = "Categorías";
+"bestSellersLabel" = "Los predilectos más vendidos";
+"price" = "Precio";
+"bestBrandsLabel" = "Las mejores marcas";
+"maintenanceInProgress" = "Mantenimiento en progreso";
+
+
+
+

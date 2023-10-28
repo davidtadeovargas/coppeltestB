@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "65D69D14-CCDB-40BE-9BC7-A67CE7548E10"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05BD4798-E266-4C83-BA42-F5CFE6537CF8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltestUITests/coppeltestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C3A792F-FDF4-43B1-BECD-BFE66E4682D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltestUITests/coppeltestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "testSuccessfulLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "292B4A4A-918B-4F4F-A14A-47A84F4E9770"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltestUITests/coppeltestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "testSuccessfulLogin()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "292B4A4A-918B-4F4F-A14A-47A84F4E9770 - 5bce30d45459eb96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "coppeltestUITests.coppeltestUITests.testSuccessfulLogin() throws -&gt; ()"
+                  moduleName = "coppeltestUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user247890/Documents/coppeltest/coppeltestUITests/coppeltestUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "932">
+               </Location>
+               <Location
+                  uuid = "292B4A4A-918B-4F4F-A14A-47A84F4E9770 - 5bce30d45459ebf7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "coppeltestUITests.coppeltestUITests.testSuccessfulLogin() throws -&gt; ()"
+                  moduleName = "coppeltestUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user247890/Documents/coppeltest/coppeltestUITests/coppeltestUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "1108">
+               </Location>
+               <Location
+                  uuid = "292B4A4A-918B-4F4F-A14A-47A84F4E9770 - 5bce30d45459ebf7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "coppeltestUITests.coppeltestUITests.testSuccessfulLogin() throws -&gt; ()"
+                  moduleName = "coppeltestUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user247890/Documents/coppeltest/coppeltestUITests/coppeltestUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "1928">
+               </Location>
+               <Location
+                  uuid = "292B4A4A-918B-4F4F-A14A-47A84F4E9770 - 5bce30d45459ebf7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "coppeltestUITests.coppeltestUITests.testSuccessfulLogin() throws -&gt; ()"
+                  moduleName = "coppeltestUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user247890/Documents/coppeltest/coppeltestUITests/coppeltestUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "2000">
+               </Location>
+               <Location
+                  uuid = "292B4A4A-918B-4F4F-A14A-47A84F4E9770 - 5bce30d45459ea1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "coppeltestUITests.coppeltestUITests.testSuccessfulLogin() throws -&gt; ()"
+                  moduleName = "coppeltestUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user247890/Documents/coppeltest/coppeltestUITests/coppeltestUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "2276">
+               </Location>
+               <Location
+                  uuid = "292B4A4A-918B-4F4F-A14A-47A84F4E9770 - 5bce30d45459ea9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "coppeltestUITests.coppeltestUITests.testSuccessfulLogin() throws -&gt; ()"
+                  moduleName = "coppeltestUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user247890/Documents/coppeltest/coppeltestUITests/coppeltestUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "2052">
+               </Location>
+               <Location
+                  uuid = "292B4A4A-918B-4F4F-A14A-47A84F4E9770 - 5bce30d45459eaff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "coppeltestUITests.coppeltestUITests.testSuccessfulLogin() throws -&gt; ()"
+                  moduleName = "coppeltestUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user247890/Documents/coppeltest/coppeltestUITests/coppeltestUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "2272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA28A6E8-E694-4D75-AFDC-5DF5BB0B6ACE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltestUITests/coppeltestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "testSuccessfulLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFC2E401-117A-4246-8C25-41907ECCC854"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltestUITests/coppeltestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "testSuccessfulLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C690A34A-64D4-449F-AEB8-075C363FE357"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltest/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "signIn(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "113DF5FF-CBF4-4AA4-AB7C-C494CFB9757A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltest/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "signIn(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D825BC0-82B2-4C30-A9C4-46F328CE78FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltestUITests/coppeltestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "coppeltestUITests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2507C74-7E4E-48FA-9D8E-913321616FF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltestUITests/coppeltestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "testSuccessfulLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B98DBB43-805E-4FEC-AC6B-066298B5D77A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "coppeltestUITests/coppeltestUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "testNotSuccessfulLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
