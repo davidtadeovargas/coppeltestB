@@ -19,6 +19,8 @@
 		818987EB2AECF5DC0089A548 /* BrandsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987EA2AECF5DC0089A548 /* BrandsService.swift */; };
 		818987ED2AECF69F0089A548 /* CategoriesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987EC2AECF69F0089A548 /* CategoriesServiceTests.swift */; };
 		818987EF2AECF7D00089A548 /* BrandsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987EE2AECF7D00089A548 /* BrandsServiceTests.swift */; };
+		81A79A302AED0A0B0014014D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A79A2F2AED0A0B0014014D /* LoginService.swift */; };
+		81A79A322AED0DD50014014D /* LoginServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A79A312AED0DD50014014D /* LoginServiceTests.swift */; };
 		81D999C62AEAD4A60071A96D /* coppeltestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C52AEAD4A60071A96D /* coppeltestApp.swift */; };
 		81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C72AEAD4A60071A96D /* LoginView.swift */; };
 		81D999CA2AEAD4A80071A96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D999C92AEAD4A80071A96D /* Assets.xcassets */; };
@@ -80,6 +82,8 @@
 		818987EA2AECF5DC0089A548 /* BrandsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsService.swift; sourceTree = "<group>"; };
 		818987EC2AECF69F0089A548 /* CategoriesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesServiceTests.swift; sourceTree = "<group>"; };
 		818987EE2AECF7D00089A548 /* BrandsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsServiceTests.swift; sourceTree = "<group>"; };
+		81A79A2F2AED0A0B0014014D /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		81A79A312AED0DD50014014D /* LoginServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTests.swift; sourceTree = "<group>"; };
 		81D999C22AEAD4A60071A96D /* coppeltest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coppeltest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D999C52AEAD4A60071A96D /* coppeltestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coppeltestApp.swift; sourceTree = "<group>"; };
 		81D999C72AEAD4A60071A96D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				818987E42AECF2220089A548 /* ProductService.swift */,
 				818987E82AECF5D30089A548 /* CategoriesService.swift */,
 				818987EA2AECF5DC0089A548 /* BrandsService.swift */,
+				81A79A2F2AED0A0B0014014D /* LoginService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				818987E62AECF3470089A548 /* ProductsServiceTests.swift */,
 				818987EC2AECF69F0089A548 /* CategoriesServiceTests.swift */,
 				818987EE2AECF7D00089A548 /* BrandsServiceTests.swift */,
+				81A79A312AED0DD50014014D /* LoginServiceTests.swift */,
 			);
 			path = coppeltestTests;
 			sourceTree = "<group>";
@@ -411,6 +417,7 @@
 				81D99A0B2AEB7A210071A96D /* BrandModel.swift in Sources */,
 				81D99A1D2AEBBF070071A96D /* MaintenanceView.swift in Sources */,
 				81D99A152AEB98070071A96D /* ProductsViewModel.swift in Sources */,
+				81A79A302AED0A0B0014014D /* LoginService.swift in Sources */,
 				81D99A172AEBA6B30071A96D /* BrandsView.swift in Sources */,
 				81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */,
 				81D999F92AEB5B600071A96D /* SplashView.swift in Sources */,
@@ -447,6 +454,7 @@
 				818987ED2AECF69F0089A548 /* CategoriesServiceTests.swift in Sources */,
 				81D999D72AEAD4A80071A96D /* LoginViewModelTests.swift in Sources */,
 				818987E72AECF3470089A548 /* ProductsServiceTests.swift in Sources */,
+				81A79A322AED0DD50014014D /* LoginServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

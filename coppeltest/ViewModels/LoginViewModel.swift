@@ -21,6 +21,7 @@ class LoginViewModel: ObservableObject {
     @Published var isSigningIn = false // Indica si se está realizando el proceso de inicio de sesión.
     @Published var isMaintenance = false //Con un metodo se consume del backend para actualizar este valor
 
+    private let loginService = LoginService()
     /**
      Valida los campos de correo electrónico y contraseña para habilitar el botón de inicio de sesión.
 
@@ -74,16 +75,15 @@ class LoginViewModel: ObservableObject {
         
         isSigningIn = true // Indica que se está realizando el inicio de sesión.
         
-        Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+        loginService.signIn(email: email, password: password) { result in
             
-            print("Running Auth.auth().signIn ...")
+            print("Running signIn ...")
             
+            // El inicio de sesión fue exitoso
             self.isSigningIn = false // Marca el final del proceso de inicio de sesión.
             
-            if let error = error {
-                print("error \(error)")
-                completion(false, error.localizedDescription)
-            } else {
+            switch result {
+            case .success:
                 
                 //Aquí se podría validar si esta en mantenimiento o no la app
                 
@@ -93,6 +93,10 @@ class LoginViewModel: ObservableObject {
                 
                 print("isLoggedIn")
                 completion(true, "")
+                
+            case .failure(let error):
+                print("error \(error)")
+                completion(false, error.localizedDescription)
             }
         }
     }
