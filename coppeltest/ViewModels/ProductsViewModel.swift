@@ -14,6 +14,8 @@ class ProductsViewModel: ObservableObject {
     
     @Published var products: [ProductModel] = []
 
+    private let productService: ProductService = ProductService()
+    
     /**
      Inicializa un nuevo ViewModel de productos y carga productos desde una fuente de datos remota.
      
@@ -34,19 +36,15 @@ class ProductsViewModel: ObservableObject {
      - SeeAlso: `ProductModel` para ver el modelo de datos de producto asociado.
      */
     func fetchProducts() {
-        if let url = URL(string: "https://fakestoreapi.com/products") {
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                if let data = data {
-                    do {
-                        let decodedProducts = try JSONDecoder().decode([ProductModel].self, from: data)
-                        DispatchQueue.main.async {
-                            self.products = decodedProducts
-                        }
-                    } catch {
-                        print("Error decoding JSON: \(error)")
-                    }
+        productService.fetchProducts { result in
+            switch result {
+            case .success(let products):
+                DispatchQueue.main.async {
+                    self.products = products
                 }
-            }.resume()
+            case .failure(let error):
+                print("Error fetching products: \(error)")
+            }
         }
     }
 }

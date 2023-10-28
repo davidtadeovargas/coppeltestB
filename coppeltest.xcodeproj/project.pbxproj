@@ -13,6 +13,7 @@
 		8113C9BD2AEBDC19009F99CC /* CategoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113C9BC2AEBDC19009F99CC /* CategoriesViewModelTests.swift */; };
 		8113C9BF2AEBDC24009F99CC /* BrandsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113C9BE2AEBDC24009F99CC /* BrandsViewModelTests.swift */; };
 		818987E22AECC63D0089A548 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 818987E12AECC63D0089A548 /* README.md */; };
+		818987E52AECF2220089A548 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987E42AECF2220089A548 /* ProductService.swift */; };
 		81D999C62AEAD4A60071A96D /* coppeltestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C52AEAD4A60071A96D /* coppeltestApp.swift */; };
 		81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C72AEAD4A60071A96D /* LoginView.swift */; };
 		81D999CA2AEAD4A80071A96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D999C92AEAD4A80071A96D /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		8113C9BC2AEBDC19009F99CC /* CategoriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModelTests.swift; sourceTree = "<group>"; };
 		8113C9BE2AEBDC24009F99CC /* BrandsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsViewModelTests.swift; sourceTree = "<group>"; };
 		818987E12AECC63D0089A548 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		818987E42AECF2220089A548 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		81D999C22AEAD4A60071A96D /* coppeltest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coppeltest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D999C52AEAD4A60071A96D /* coppeltestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coppeltestApp.swift; sourceTree = "<group>"; };
 		81D999C72AEAD4A60071A96D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		818987E32AECF2150089A548 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				818987E42AECF2220089A548 /* ProductService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		81D999B92AEAD4A60071A96D = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		81D999C42AEAD4A60071A96D /* coppeltest */ = {
 			isa = PBXGroup;
 			children = (
+				818987E32AECF2150089A548 /* Services */,
 				81D99A052AEB78820071A96D /* Models */,
 				81D999F52AEB361C0071A96D /* ViewModels */,
 				81D999F42AEB360C0071A96D /* Views */,
@@ -398,6 +409,7 @@
 				81D99A192AEBA6E90071A96D /* BrandsViewModel.swift in Sources */,
 				8113C9B72AEBC2CD009F99CC /* PromotionalBannerView.swift in Sources */,
 				81D99A042AEB76F50071A96D /* HomeView.swift in Sources */,
+				818987E52AECF2220089A548 /* ProductService.swift in Sources */,
 				81D99A1F2AEBBF960071A96D /* HomeViewModel.swift in Sources */,
 				81D99A002AEB763B0071A96D /* ProductView.swift in Sources */,
 				81D999FE2AEB75FD0071A96D /* CategoryView.swift in Sources */,
