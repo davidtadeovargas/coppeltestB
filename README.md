@@ -1,76 +1,60 @@
 # Examen Técnico - Examen Técnico Coppel
-*(Opcional: Coloca un encabezado con el nombre de tu proyecto)*
 Login Coppel Test App
 
 ## Descripción
-*(Añade una breve descripción de tu proyecto, su propósito y contexto)*
-
-Este proyecto se creó como parte de un examen técnico y tiene como objetivo...
+Este proyecto se creó como parte de un examen técnico y tiene como objetivo evaluar mis capacidades de conocimiento e implementación en iOS y Swift
 
 ## Requisitos
-*(Enumera los requisitos o restricciones que debes seguir en tu proyecto)*
 
 - Lenguaje de programación: Swift
 - Uso de SwiftUI solo para componentes dentro de un controlador
 
 ## Dependencias
-*(Enumera las dependencias válidas para el proyecto)*
 
 - Firebase Auth
 - Firebase Realtime Database
 
 ## Instrucciones de Uso
-*(Proporciona instrucciones básicas sobre cómo usar y ejecutar el proyecto)*
 
 1. Clona este repositorio en tu máquina local.
 2. Abre el proyecto en Xcode.
 3. ...
 
 ## Casos de Uso
-*(Descripciones breves de los principales casos de uso de tu proyecto)*
 
 ### Caso de Uso 1: Hacer login con Firebase Auth
-*(Detalles sobre el primer caso de uso, si es necesario)*
 
 ### Caso de Uso 2: Mostrar error al fallar sdk por credenciales inválidas
-*(Detalles sobre el segundo caso de uso, si es necesario)*
 
 ...
 
 ## Diseño
-*(Información sobre el diseño del proyecto, estructura y consideraciones de diseño)*
 
 El diseño de este proyecto sigue una estructura Clean Swift...
 
 ## Documentación Técnica
-*(Si tienes documentación técnica adicional, aquí es donde puedes mencionarla o proporcionar enlaces)*
 
-Puedes encontrar documentación técnica detallada en [este enlace](link-to-documentation).
+Se utilizo esta API de prueba de productos, da clic en [este enlace](https://fakestoreapi.com/docs).
 
 ## Feature Flags
-*(Información sobre las características de feature flags o banderas de características implementadas)*
 
-Este proyecto utiliza feature flags para...
+Este proyecto utiliza feature flags como un extra en la evaluación:
+
+CA1: Agregar una pantalla que diga mantenimiento que se puede sobreponer en el home CA 2: Agregar Un banner promocional (Una Imagen) que se pueda mostrar o esconder en tiempo real
+CA 3: Bloquear versión mediante en tiempo real para no acceder a la aplicación , debería de permanecer en el splash y mostrar una alerta que sugiera actualizar
 
 ## Pruebas Unitarias
-*(Instrucciones o información sobre las pruebas unitarias incluidas en el proyecto)*
 
-Puedes ejecutar las pruebas unitarias usando el siguiente comando...
+Contiene pruebas unitarias para los principales componentes
 
 ## Pruebas de Interfaz de Usuario
-*(Instrucciones o información sobre las pruebas de interfaz de usuario incluidas en el proyecto)*
 
-Puedes ejecutar las pruebas de interfaz de usuario usando el siguiente comando...
+Contiene pruebas unitarias de UI para las dos pantallas principales
 
 ## Licencia
-*(Especifica cualquier información sobre la licencia de tu proyecto, si es aplicable)*
+Examen Técnico
 
 ## Autor
-*(Añade tu nombre o nombre de los autores del proyecto, si lo deseas)*
-David Tadeo Vargas Valenzuela
 
 ## Contacto
-*(Proporciona información de contacto si otros desarrolladores desean comunicarse contigo para preguntas o colaboración)*
-
-## Agradecimientos
-*(Agradece a las personas, organizaciones o recursos que han sido útiles para tu proyecto)*
+coritocorito@hotmail.com
