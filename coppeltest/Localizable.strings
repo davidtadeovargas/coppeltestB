@@ -15,6 +15,7 @@
 "price" = "Precio";
 "bestBrandsLabel" = "Las mejores marcas";
 "maintenanceInProgress" = "Mantenimiento en progreso";
+"noInternetConnection" = "No hay conexión a Internet";
 
 
 

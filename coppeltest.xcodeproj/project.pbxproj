@@ -21,6 +21,9 @@
 		818987EF2AECF7D00089A548 /* BrandsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818987EE2AECF7D00089A548 /* BrandsServiceTests.swift */; };
 		81A79A302AED0A0B0014014D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A79A2F2AED0A0B0014014D /* LoginService.swift */; };
 		81A79A322AED0DD50014014D /* LoginServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A79A312AED0DD50014014D /* LoginServiceTests.swift */; };
+		81D77CB32AF19CDA0002F3D8 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D77CB22AF19CDA0002F3D8 /* ConnectivityManager.swift */; };
+		81D77CB52AF19FCC0002F3D8 /* ConnectivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D77CB42AF19FCC0002F3D8 /* ConnectivityViewModel.swift */; };
+		81D77CB72AF19FEF0002F3D8 /* ConnectivityNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D77CB62AF19FEF0002F3D8 /* ConnectivityNotificationView.swift */; };
 		81D999C62AEAD4A60071A96D /* coppeltestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C52AEAD4A60071A96D /* coppeltestApp.swift */; };
 		81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D999C72AEAD4A60071A96D /* LoginView.swift */; };
 		81D999CA2AEAD4A80071A96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D999C92AEAD4A80071A96D /* Assets.xcassets */; };
@@ -84,6 +87,9 @@
 		818987EE2AECF7D00089A548 /* BrandsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsServiceTests.swift; sourceTree = "<group>"; };
 		81A79A2F2AED0A0B0014014D /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		81A79A312AED0DD50014014D /* LoginServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTests.swift; sourceTree = "<group>"; };
+		81D77CB22AF19CDA0002F3D8 /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
+		81D77CB42AF19FCC0002F3D8 /* ConnectivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityViewModel.swift; sourceTree = "<group>"; };
+		81D77CB62AF19FEF0002F3D8 /* ConnectivityNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityNotificationView.swift; sourceTree = "<group>"; };
 		81D999C22AEAD4A60071A96D /* coppeltest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coppeltest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D999C52AEAD4A60071A96D /* coppeltestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coppeltestApp.swift; sourceTree = "<group>"; };
 		81D999C72AEAD4A60071A96D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -176,6 +182,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		81D77CB12AF19CCE0002F3D8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				81D77CB22AF19CDA0002F3D8 /* ConnectivityManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		81D999B92AEAD4A60071A96D = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +214,7 @@
 		81D999C42AEAD4A60071A96D /* coppeltest */ = {
 			isa = PBXGroup;
 			children = (
+				81D77CB12AF19CCE0002F3D8 /* Managers */,
 				818987E32AECF2150089A548 /* Services */,
 				81D99A052AEB78820071A96D /* Models */,
 				81D999F52AEB361C0071A96D /* ViewModels */,
@@ -248,6 +263,7 @@
 				81D999F82AEB5B600071A96D /* SplashView.swift */,
 				81D99A1C2AEBBF070071A96D /* MaintenanceView.swift */,
 				8113C9B62AEBC2CD009F99CC /* PromotionalBannerView.swift */,
+				81D77CB62AF19FEF0002F3D8 /* ConnectivityNotificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +277,7 @@
 				81D99A182AEBA6E90071A96D /* BrandsViewModel.swift */,
 				81D99A1E2AEBBF960071A96D /* HomeViewModel.swift */,
 				8113C9B82AEBC7A7009F99CC /* SplashViewModel.swift */,
+				81D77CB42AF19FCC0002F3D8 /* ConnectivityViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -435,6 +452,7 @@
 				81D99A152AEB98070071A96D /* ProductsViewModel.swift in Sources */,
 				81A79A302AED0A0B0014014D /* LoginService.swift in Sources */,
 				81D99A172AEBA6B30071A96D /* BrandsView.swift in Sources */,
+				81D77CB32AF19CDA0002F3D8 /* ConnectivityManager.swift in Sources */,
 				81D999C82AEAD4A60071A96D /* LoginView.swift in Sources */,
 				81D999F92AEB5B600071A96D /* SplashView.swift in Sources */,
 				818987EB2AECF5DC0089A548 /* BrandsService.swift in Sources */,
@@ -447,6 +465,7 @@
 				81D999F72AEB364F0071A96D /* LoginViewModel.swift in Sources */,
 				81D99A192AEBA6E90071A96D /* BrandsViewModel.swift in Sources */,
 				818987E92AECF5D30089A548 /* CategoriesService.swift in Sources */,
+				81D77CB52AF19FCC0002F3D8 /* ConnectivityViewModel.swift in Sources */,
 				8113C9B72AEBC2CD009F99CC /* PromotionalBannerView.swift in Sources */,
 				81D99A042AEB76F50071A96D /* HomeView.swift in Sources */,
 				818987E52AECF2220089A548 /* ProductService.swift in Sources */,
@@ -455,6 +474,7 @@
 				81D999FE2AEB75FD0071A96D /* CategoryView.swift in Sources */,
 				81D99A0D2AEB8BBE0071A96D /* Category.swift in Sources */,
 				8113C9B92AEBC7A7009F99CC /* SplashViewModel.swift in Sources */,
+				81D77CB72AF19FEF0002F3D8 /* ConnectivityNotificationView.swift in Sources */,
 				81D99A132AEB97590071A96D /* ProductsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

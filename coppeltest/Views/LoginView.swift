@@ -4,9 +4,15 @@ struct LoginView: View {
     
     @ObservedObject private var viewModel = LoginViewModel()
     
+    @EnvironmentObject var connectivityViewModel: ConnectivityViewModel
+    
     var body: some View {
         
         ScrollView(.vertical) {
+            
+            if  !connectivityViewModel.isInternetAvailable {
+                ConnectivityNotificationView()
+            }
             
             VStack {
                 

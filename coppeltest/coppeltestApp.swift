@@ -23,11 +23,14 @@ struct coppeltestApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
+    let connectivityViewModel = ConnectivityViewModel()
+    
     @State private var showSplash = true
     
     var body: some Scene {
         WindowGroup {
             SplashView()
+                .environmentObject(connectivityViewModel)
         }
     }
 }
