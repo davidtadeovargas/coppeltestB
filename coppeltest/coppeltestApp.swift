@@ -23,7 +23,7 @@ struct coppeltestApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
-    let connectivityViewModel = ConnectivityViewModel()
+    @StateObject private var connectivityViewModel = ConnectivityViewModel()
     
     @State private var showSplash = true
     
