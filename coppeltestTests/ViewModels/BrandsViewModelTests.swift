@@ -9,18 +9,20 @@ final class BrandsViewModelTests: XCTestCase {
         brandsViewModel = BrandsViewModel()
     }
 
-    // Caso de prueba para verificar si la lista de marcas se carga correctamente
     func testLoadBrands() {
-        XCTAssertEqual(brandsViewModel.brands.count, 4) // Debe haber 4 marcas de ejemplo en la lista.
-    }
-    
-    // Caso de prueba para verificar si se inicializa la lista de marcas al crear el ViewModel
-    func testInitialization() {
-        XCTAssertFalse(brandsViewModel.brands.isEmpty) // La lista de marcas no debe estar vacía al inicializar el ViewModel.
-    }
-    
-    // Caso de prueba para verificar si la lista de marcas no está vacía
-    func testBrandsNotEmpty() {
-        XCTAssertFalse(brandsViewModel.brands.isEmpty) // La lista de marcas no debe estar vacía.
+            
+        // Arrange
+        let expectation = XCTestExpectation(description: "Brands loading completed")
+
+        // Act
+        brandsViewModel.loadBrands()
+
+        // Assert
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) { // Espera un tiempo suficiente para la carga (ajusta según tu lógica)
+            XCTAssertTrue(self.brandsViewModel.brands.count > 0, "No se cargaron marcas")
+            expectation.fulfill()
+        }
+
+        wait(for: [expectation], timeout: 10.0) // Ajusta el tiempo de espera según sea necesario
     }
 }

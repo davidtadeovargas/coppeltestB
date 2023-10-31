@@ -66,9 +66,43 @@ class coppeltestUITests: XCTestCase {
         app.launchArguments = ["isRunningUITests"]
         app.launch()
         
-        // Accede a los campos de correo electrónico y contraseña y escribe valores válidos.
         let emailTextField = app.textFields["EmailTextField"]
         XCTAssertTrue(emailTextField.waitForExistence(timeout: 15))
+
+        // Espera a que el campo de texto sea seleccionable
+        let isSelectable = emailTextField.waitForExistence(timeout: 5) // Puedes ajustar el tiempo límite según sea necesario
+
+        if isSelectable {
+            // Borrar el contenido del campo de texto
+            emailTextField.tap()
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("\u{8}")
+            emailTextField.typeText("coritocorito@hotmail.com")
+        } else {
+            XCTFail("El campo de correo electrónico no es seleccionable.")
+        }
         
         let passwordTextField = app.secureTextFields["PasswordTextField"]
         XCTAssert(passwordTextField.exists)
@@ -94,11 +128,11 @@ class coppeltestUITests: XCTestCase {
 
         // Verifica si la expectativa se cumplió
         if result == .completed {
-            // El mensaje de error está vacío, lo que indica un inicio de sesión exitoso
+            // El mensaje de error no está vacío, lo que indica un inicio de sesión no exitoso
             print("Login exitoso.")
         } else {
             // La expectativa no se cumplió a tiempo o el mensaje de error no está vacío
-            XCTFail("Fallo en el inicio de sesión.")
+            XCTFail("Inicio de sesión incorrecto")
         }
     }
     
