@@ -2,15 +2,9 @@
 
     struct HomeView: View {
         
-        @ObservedObject private var viewModel = HomeViewModel()
-        
-        init(viewModel: HomeViewModel) {
-            self.viewModel = viewModel
-        }
-        
         var body: some View {
             VStack {
-                
+                Spacer()
                 if !ProcessInfo.processInfo.arguments.contains("isRunningUITests") {
                     // Prepare application for UI tests.
                     
@@ -41,7 +35,6 @@
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = HomeViewModel() // Crea una instancia del viewModel con el estado deseado
-        return HomeView(viewModel: viewModel)
+        return HomeView()
     }
 }

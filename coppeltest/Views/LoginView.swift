@@ -4,19 +4,23 @@ struct LoginView: View {
     
     @ObservedObject private var viewModel = LoginViewModel()
     
-    @EnvironmentObject var connectivityViewModel: ConnectivityViewModel
+    @StateObject private var connectivityViewModel = ConnectivityViewModel()
     
     var body: some View {
         
-        ScrollView(.vertical) {
+        VStack {
             
             if  !connectivityViewModel.isInternetAvailable {
                 ConnectivityNotificationView()
             }
             
-            VStack {
+            ScrollView(.vertical) {
                 
                 Spacer() // Espacio en blanco en la parte superior
+                
+                NavigationLink("", destination: HomeView(), isActive: $viewModel.isLoggedIn)
+                
+                NavigationLink("", destination: MaintenanceView(), isActive: $viewModel.isMaintenance)
                 
                 Image("logo_coppel")
                     .resizable()
@@ -41,7 +45,7 @@ struct LoginView: View {
                 
                 TextField("EmailPlaceholder", text: $viewModel.email)
                     .textFieldStyle(.plain)
-                    .accessibilityIdentifier("EmailTextField") 
+                    .accessibilityIdentifier("EmailTextField")
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                     .overlay(Rectangle().frame(height: 1).foregroundColor(Color.gray.opacity(0.6)), alignment: .bottom)
                     .onReceive(viewModel.$email) { email in
@@ -115,10 +119,6 @@ struct LoginView: View {
                 
                 Spacer() // Espacio en blanco en la parte superior
                 
-                NavigationLink("", destination: HomeView(viewModel: HomeViewModel()), isActive: $viewModel.isLoggedIn)
-                
-                NavigationLink("", destination: MaintenanceView(), isActive: $viewModel.isMaintenance)
-                
                 Button(action: {
                     viewModel.isSigningIn = true // Habilita la bandera para indicar que se está iniciando sesión
                     viewModel.signIn { success, errorMessage in
@@ -167,11 +167,11 @@ struct LoginView: View {
                         .cornerRadius(4)
                 }
                 
-                Spacer() // Espacio en blanco en la parte superior
+                Spacer()
             }
-            .background(Color.white)
-            .padding()
         }
+        .background(Color.white)
+        .padding()
     }
 }
 
