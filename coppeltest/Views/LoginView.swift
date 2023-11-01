@@ -4,7 +4,7 @@ struct LoginView: View {
     
     @ObservedObject private var viewModel = LoginViewModel()
     
-    @StateObject private var connectivityViewModel = ConnectivityViewModel()
+    @ObservedObject private var connectivityViewModel = ConnectivityViewModel.shared
     
     var body: some View {
         
@@ -172,6 +172,9 @@ struct LoginView: View {
         }
         .background(Color.white)
         .padding()
+        .onAppear {
+            self.connectivityViewModel.shouldCheckConnectivity = true //Vuelve a checar conexión a internet
+        }
     }
 }
 

@@ -2,6 +2,9 @@
 
     struct HomeView: View {
         
+        @ObservedObject private var viewModel = HomeViewModel()
+        @ObservedObject var connectivityViewModel = ConnectivityViewModel.shared
+        
         var body: some View {
             VStack {
                 Spacer()
@@ -22,6 +25,14 @@
                     }
                     .background(Color.gray.opacity(0.1))
                     
+                    if viewModel.isBannerVisible {
+                        PromotionalBannerView()
+                            .onTapGesture {
+                                // Ocultar el banner cuando se toque
+                                viewModel.isBannerVisible = false
+                            }
+                    }
+                    
                     Spacer()
                     Spacer()
                     Spacer()
@@ -30,6 +41,9 @@
             }
             .background(Color.gray.opacity(0.1))
             .accessibility(identifier: "HomeView")
+            .onAppear { //Aqui ya no debe de consultar la conexión a internet
+                self.connectivityViewModel.shouldCheckConnectivity = false
+            }
         }
     }
 

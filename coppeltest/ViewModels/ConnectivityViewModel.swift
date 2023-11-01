@@ -3,20 +3,27 @@ import Network
 import Combine
 
 class ConnectivityViewModel: ObservableObject {
+    
+    static let shared = ConnectivityViewModel() // Instancia única (singleton)
+
     @Published var isInternetAvailable: Bool = true
+    @Published var shouldCheckConnectivity: Bool = true // Propiedad para controlar si se debe revisar la conectividad
 
     private var monitor: NWPathMonitor?
+    private var timer: Timer?
     private var cancellables: Set<AnyCancellable> = []
 
-    init() {
-        
+    private init() {
         // Configura un temporizador para comprobar la conectividad cada segundo.
-        let timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+            guard let self = self, self.shouldCheckConnectivity else {
+                return
+            }
             self.checkInternetConnectivity()
         }
-        
+
         // Asegúrate de que el temporizador se ejecute incluso si la interfaz de usuario está inactiva.
-        RunLoop.current.add(timer, forMode: .common)
+        RunLoop.current.add(timer!, forMode: .common)
     }
 
     private func checkInternetConnectivity() {

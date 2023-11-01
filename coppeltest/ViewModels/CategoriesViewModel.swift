@@ -13,7 +13,6 @@ import Combine
 class CategoriesViewModel: ObservableObject {
     
     @Published var categories: [CategoryModel] = []
-    @Published var isBannerVisible = true
     
     private let categoriesService = CategoriesService()
     

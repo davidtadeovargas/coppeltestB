@@ -52,6 +52,7 @@
 		81D99A192AEBA6E90071A96D /* BrandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A182AEBA6E90071A96D /* BrandsViewModel.swift */; };
 		81D99A1B2AEBA7720071A96D /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A1A2AEBA7720071A96D /* Brand.swift */; };
 		81D99A1D2AEBBF070071A96D /* MaintenanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D99A1C2AEBBF070071A96D /* MaintenanceView.swift */; };
+		AE5E0F4B2AF2C20500B841BE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E0F4A2AF2C20500B841BE /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		81D99A182AEBA6E90071A96D /* BrandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsViewModel.swift; sourceTree = "<group>"; };
 		81D99A1A2AEBA7720071A96D /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		81D99A1C2AEBBF070071A96D /* MaintenanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceView.swift; sourceTree = "<group>"; };
+		AE5E0F4A2AF2C20500B841BE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 				81D99A182AEBA6E90071A96D /* BrandsViewModel.swift */,
 				8113C9B82AEBC7A7009F99CC /* SplashViewModel.swift */,
 				81D77CB42AF19FCC0002F3D8 /* ConnectivityViewModel.swift */,
+				AE5E0F4A2AF2C20500B841BE /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				81D99A092AEB79870071A96D /* CategoryModel.swift in Sources */,
 				81D999C62AEAD4A60071A96D /* coppeltestApp.swift in Sources */,
 				81D99A112AEB90CE0071A96D /* CategoriesViewModel.swift in Sources */,
+				AE5E0F4B2AF2C20500B841BE /* HomeViewModel.swift in Sources */,
 				81D99A0F2AEB8FFE0071A96D /* CategoriesView.swift in Sources */,
 				81D99A1B2AEBA7720071A96D /* Brand.swift in Sources */,
 				81D99A072AEB788C0071A96D /* ProductModel.swift in Sources */,

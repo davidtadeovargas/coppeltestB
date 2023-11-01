@@ -40,18 +40,6 @@ struct CategoriesView: View {
         )
         .background(Color.gray.opacity(0.1)) // Fondo gris claro
         .accessibility(identifier: "CategoriesView")
-        .overlay(
-            // Muestra el mensaje promocional encima del contenido
-            Group {
-                if viewModel.isBannerVisible {
-                    PromotionalBannerView()
-                        .onTapGesture {
-                            // Ocultar el banner cuando se toque
-                            viewModel.isBannerVisible = false
-                        }
-                }
-            }
-        )
     }
 }
 

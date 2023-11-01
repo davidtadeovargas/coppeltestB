@@ -68,41 +68,6 @@ class coppeltestUITests: XCTestCase {
         
         let emailTextField = app.textFields["EmailTextField"]
         XCTAssertTrue(emailTextField.waitForExistence(timeout: 15))
-
-        // Espera a que el campo de texto sea seleccionable
-        let isSelectable = emailTextField.waitForExistence(timeout: 5) // Puedes ajustar el tiempo límite según sea necesario
-
-        if isSelectable {
-            // Borrar el contenido del campo de texto
-            emailTextField.tap()
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("\u{8}")
-            emailTextField.typeText("coritocorito@hotmail.com")
-        } else {
-            XCTFail("El campo de correo electrónico no es seleccionable.")
-        }
         
         let passwordTextField = app.secureTextFields["PasswordTextField"]
         XCTAssert(passwordTextField.exists)
@@ -110,30 +75,13 @@ class coppeltestUITests: XCTestCase {
         // Realiza el inicio de sesión tocando el botón de inicio de sesión.
         let loginButton = app.buttons["LoginButton"]
         XCTAssert(loginButton.exists)
-
+        
         // Ejecuta la acción de tocar el botón
         loginButton.tap()
-
-        // Crea una expectativa para verificar el mensaje de error
-        let errorMessageExpectation = XCTNSPredicateExpectation(
-            predicate: NSPredicate(format: "label == ''"),
-            object: app.staticTexts["ErrorMessageLogin"]
-        )
-
-        // Espera hasta que la expectativa se cumpla o se alcance el tiempo límite
-        let result = XCTWaiter().wait(
-            for: [errorMessageExpectation],
-            timeout: 5  // Ajusta el tiempo límite según sea necesario
-        )
-
-        // Verifica si la expectativa se cumplió
-        if result == .completed {
-            // El mensaje de error no está vacío, lo que indica un inicio de sesión no exitoso
-            print("Login exitoso.")
-        } else {
-            // La expectativa no se cumplió a tiempo o el mensaje de error no está vacío
-            XCTFail("Inicio de sesión incorrecto")
-        }
+    
+        // Espera a que aparezca un elemento específico de HomeView
+        let homeViewElement = app.otherElements["HomeView"]
+        XCTAssertTrue(homeViewElement.waitForExistence(timeout: 15))
     }
     
     func testNotSuccessfulLogin() throws {
