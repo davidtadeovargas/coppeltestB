@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SplashView: View {
     
-    @ObservedObject var viewModel = SplashViewModel()
+    @ObservedObject var presenter = SplashPresenter()
     
     @State private var showLogin = false
     
@@ -14,7 +14,7 @@ struct SplashView: View {
             }
         } else {
             
-            if !viewModel.updateApp {
+            if !presenter.updateApp {
                 
                 // Muestra una imagen de inicio. Asegúrate de reemplazar "logo_coppel" con el nombre de tu propia imagen.
                 Image("logo_coppel")
@@ -35,15 +35,13 @@ struct SplashView: View {
                     .resizable() // Permite redimensionar la imagen.
                     .aspectRatio(contentMode: .fit) // Ajusta la imagen al tamaño del marco.
                     .frame(maxWidth: .infinity, maxHeight: .infinity) // Ocupa todo el espacio disponible en la pantalla.
-                .alert(isPresented: $viewModel.updateApp) {
+                .alert(isPresented: $presenter.updateApp) {
                     Alert(
                         title: Text("Nueva versión disponible"),
                         message: Text("Hay una nueva versión de la aplicación disponible. Por favor, actualiza para seguir utilizando la aplicación."),
                         primaryButton: .default(Text("Actualizar")) {
-                            // Redirigir al usuario a la App Store para que actualice la aplicación
-                            if let url = URL(string: "URL_DE_LA_APP_EN_LA_APP_STORE") {
-                                UIApplication.shared.open(url)
-                            }
+                            //De momento sale de la app pero puede dirigir al market para actualizar la app
+                            exit(0)
                         },
                         secondaryButton: .cancel(Text("Salir")) {
                             // Aquí puedes cerrar la aplicación si el usuario decide no actualizar

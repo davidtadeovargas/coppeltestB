@@ -1,19 +1,8 @@
-/**
- Una vista que muestra una lista de las mejores marcas.
-
- Esta vista muestra una lista horizontal de las mejores marcas, obtenidas a través del ViewModel `BrandsViewModel`. Proporciona un título, una lista de marcas y un borde decorativo.
-
- - Important: Asegúrate de instanciar el `BrandsViewModel` y cargar las marcas antes de utilizar esta vista.
-
- - Note: Esta vista utiliza un `ScrollView` horizontal para mostrar las marcas una al lado de la otra.
-
- - SeeAlso: `BrandsViewModel` para obtener más información sobre cómo cargar las marcas.
- */
 import SwiftUI
 
 struct BrandsView: View {
     
-    @ObservedObject var viewModel = BrandsViewModel() // Un ViewModel para administrar las marcas
+    @ObservedObject var presenter = BrandsPresenter() 
 
     var body: some View {
         
@@ -28,7 +17,7 @@ struct BrandsView: View {
             // ScrollView horizontal para mostrar las marcas
             ScrollView(.horizontal) {
                 HStack(spacing: 20) {
-                    ForEach(viewModel.brands) { brand in
+                    ForEach(presenter.brands) { brand in
                         BrandView(brand: brand)
                     }
                 }

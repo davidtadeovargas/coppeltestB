@@ -13,7 +13,7 @@ import SwiftUI
 
 struct ProductsView: View {
     
-    @ObservedObject var viewModel = ProductsViewModel() // Un ViewModel para administrar los productos
+    @ObservedObject var presenter = ProductsPresenter() // Un ViewModel para administrar los productos
 
     var body: some View {
        
@@ -36,7 +36,7 @@ struct ProductsView: View {
             ScrollView(.horizontal) {
                 
                 HStack(spacing: 2) {
-                    ForEach(viewModel.products) { product in
+                    ForEach(presenter.products) { product in
                         ProductView(product: product)
                     }
                 }

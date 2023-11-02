@@ -2,15 +2,15 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @ObservedObject private var viewModel = LoginViewModel()
+    @ObservedObject private var presenter = LoginPresenter()
     
-    @ObservedObject private var connectivityViewModel = ConnectivityViewModel.shared
+    @ObservedObject private var connectivityPresenter = ConnectivityPresenter.shared
     
     var body: some View {
         
         VStack {
             
-            if  !connectivityViewModel.isInternetAvailable {
+            if  !connectivityPresenter.isInternetAvailable {
                 ConnectivityNotificationView()
             }
             
@@ -18,9 +18,9 @@ struct LoginView: View {
                 
                 Spacer() // Espacio en blanco en la parte superior
                 
-                NavigationLink("", destination: HomeView(), isActive: $viewModel.isLoggedIn)
+                NavigationLink("", destination: HomeView(), isActive: $presenter.isLoggedIn)
                 
-                NavigationLink("", destination: MaintenanceView(), isActive: $viewModel.isMaintenance)
+                NavigationLink("", destination: MaintenanceView(), isActive: $presenter.isMaintenance)
                 
                 Image("logo_coppel")
                     .resizable()
@@ -43,17 +43,17 @@ struct LoginView: View {
                 Spacer() // Espacio en blanco en la parte superior
                 Spacer() // Espacio en blanco en la parte superior
                 
-                TextField("EmailPlaceholder", text: $viewModel.email)
+                TextField("EmailPlaceholder", text: $presenter.email)
                     .textFieldStyle(.plain)
                     .accessibilityIdentifier("EmailTextField")
                     .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                     .overlay(Rectangle().frame(height: 1).foregroundColor(Color.gray.opacity(0.6)), alignment: .bottom)
-                    .onReceive(viewModel.$email) { email in
-                        viewModel.validateFields()
+                    .onReceive(presenter.$email) { email in
+                        presenter.validateFields()
                     }
-                    .onChange(of: viewModel.email) { newEmail in
+                    .onChange(of: presenter.email) { newEmail in
                         if newEmail.count > 30 {
-                            viewModel.email = String(newEmail.prefix(30))
+                            presenter.email = String(newEmail.prefix(30))
                         }
                     }
                 
@@ -64,31 +64,31 @@ struct LoginView: View {
                 
                 HStack {
                     
-                    if viewModel.isPasswordVisible {
-                        TextField("PasswordPlaceholder", text: $viewModel.password)
+                    if presenter.isPasswordVisible {
+                        TextField("PasswordPlaceholder", text: $presenter.password)
                         .textFieldStyle(.plain)
                         .accessibilityIdentifier("PasswordTextField")
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
-                        .onReceive(viewModel.$password) { password in
-                            viewModel.validateFields()
+                        .onReceive(presenter.$password) { password in
+                            presenter.validateFields()
                         }
-                        .onChange(of: viewModel.password) { password in
+                        .onChange(of: presenter.password) { password in
                             if password.count > 10 {
-                                viewModel.password = String(password.prefix(10))
+                                presenter.password = String(password.prefix(10))
                             }
                         }
                         
                     } else {
-                        SecureField("PasswordPlaceholder", text: $viewModel.password)
+                        SecureField("PasswordPlaceholder", text: $presenter.password)
                         .textFieldStyle(.plain)
                         .accessibilityIdentifier("PasswordTextField")
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
-                        .onReceive(viewModel.$password) { password in
-                            viewModel.validateFields()
+                        .onReceive(presenter.$password) { password in
+                            presenter.validateFields()
                         }
-                        .onChange(of: viewModel.password) { password in
+                        .onChange(of: presenter.password) { password in
                             if password.count > 10 {
-                                viewModel.password = String(password.prefix(10))
+                                presenter.password = String(password.prefix(10))
                             }
                         }
                     }
@@ -96,9 +96,9 @@ struct LoginView: View {
                     Spacer() // Espacio flexible para empujar el botón hacia la derecha
 
                     Button(action: {
-                            viewModel.isPasswordVisible.toggle()
+                        presenter.isPasswordVisible.toggle()
                         }) {
-                            Image(systemName: viewModel.isPasswordVisible ? "eye.slash.fill" : "eye.fill")
+                            Image(systemName: presenter.isPasswordVisible ? "eye.slash.fill" : "eye.fill")
                         }
                         .padding(.trailing, 10)
                         .foregroundColor(.black)
@@ -108,7 +108,7 @@ struct LoginView: View {
                     .frame(height: 1)
                     .foregroundColor(Color.gray.opacity(0.6))
                 
-                Text(viewModel.errorMessage)
+                Text(presenter.errorMessage)
                     .foregroundColor(.red) // Establece el color del mensaje de error
                     .font(.system(size: 16, weight: .regular))
                     .padding(.top, 5)
@@ -120,9 +120,9 @@ struct LoginView: View {
                 Spacer() // Espacio en blanco en la parte superior
                 
                 Button(action: {
-                    viewModel.isSigningIn = true // Habilita la bandera para indicar que se está iniciando sesión
-                    viewModel.signIn { success, errorMessage in
-                            viewModel.isSigningIn = false // Deshabilita la bandera después de la autenticación
+                    presenter.isSigningIn = true // Habilita la bandera para indicar que se está iniciando sesión
+                    presenter.signIn { success, errorMessage in
+                        presenter.isSigningIn = false // Deshabilita la bandera después de la autenticación
                             if success {
                                 
                             } else {
@@ -130,7 +130,7 @@ struct LoginView: View {
                                 print("Error: \(errorMessage)")
                                 
                                 // Mostrar el mensaje de error al usuario
-                                viewModel.errorMessage = NSLocalizedString("InvalidUserPassword", comment: "Invalid username or password")
+                                presenter.errorMessage = NSLocalizedString("InvalidUserPassword", comment: "Invalid username or password")
 
                             }
                     }
@@ -140,14 +140,14 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(viewModel.isLoginButtonEnabled ? Color(
+                        .background(presenter.isLoginButtonEnabled ? Color(
                             red: Double(0x32) / 255.0,
                             green: Double(0x68) / 255.0,
                             blue: Double(0xA8) / 255.0
                         ) : .gray)
                         .cornerRadius(10)
                 }
-                .disabled(!viewModel.isLoginButtonEnabled || viewModel.isSigningIn) // Desactiva el botón si no es válido o se está iniciando sesión
+                .disabled(!presenter.isLoginButtonEnabled || presenter.isSigningIn) // Desactiva el botón si no es válido o se está iniciando sesión
                 .accessibilityIdentifier("LoginButton")
                 
                 Text("DoNotHaveAccount")
@@ -173,7 +173,7 @@ struct LoginView: View {
         .background(Color.white)
         .padding()
         .onAppear {
-            self.connectivityViewModel.shouldCheckConnectivity = true //Vuelve a checar conexión a internet
+            self.connectivityPresenter.shouldCheckConnectivity = true //Vuelve a checar conexión a internet
         }
     }
 }

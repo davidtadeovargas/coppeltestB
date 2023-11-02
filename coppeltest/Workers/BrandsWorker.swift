@@ -1,6 +1,6 @@
 import Foundation
 
-class BrandsService {
+class BrandsWorker {
     
     private var brands: [BrandModel] = [
         BrandModel(brand: .apple),
@@ -9,10 +9,10 @@ class BrandsService {
         BrandModel(brand: .sony)
     ]
     
-    func fetchBrands(completion: @escaping ([BrandModel]) -> Void) {
+    func fetchBrands(completion: @escaping ([BrandModel]?, Error?) -> Void) {
         // Simulamos una llamada asincrónica y luego llamamos al bloque de finalización con la lista de marcas.
         DispatchQueue.global().async {
-            completion(self.brands)
+            completion(self.brands,nil)
         }
     }
 }

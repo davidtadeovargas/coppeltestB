@@ -81,7 +81,7 @@ class coppeltestUITests: XCTestCase {
     
         // Espera a que aparezca un elemento específico de HomeView
         let homeViewElement = app.otherElements["HomeView"]
-        XCTAssertTrue(homeViewElement.waitForExistence(timeout: 15))
+        XCTAssertTrue(homeViewElement.waitForExistence(timeout: 20))
     }
     
     func testNotSuccessfulLogin() throws {

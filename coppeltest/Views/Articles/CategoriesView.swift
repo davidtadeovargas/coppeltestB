@@ -12,7 +12,8 @@
 import SwiftUI
 
 struct CategoriesView: View {
-    @ObservedObject var viewModel = CategoriesViewModel() // Un ViewModel para administrar las categorías
+    
+    @ObservedObject var presenter = CategoriesPresenter()
 
     var body: some View {
         
@@ -25,7 +26,7 @@ struct CategoriesView: View {
             // ScrollView horizontal para mostrar las categorías
             ScrollView(.horizontal) {
                 HStack {
-                    ForEach(viewModel.categories) { category in
+                    ForEach(presenter.categories) { category in
                         CategoryView(category: category)
                     }
                 }
